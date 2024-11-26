@@ -1,5 +1,6 @@
 .container {
   max-width: 360px;
+  position: fixed;
 }
 .header {
   background-color: #000000;
@@ -7,6 +8,9 @@
   justify-content: space-between;
   align-items: center;
   height: 50px;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 .img {
   width: 70px;
