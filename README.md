@@ -11,3 +11,4 @@ Currently, two official plugins are available:
 npm i,
 npm install react-router-dom,
 npm install clsx,
+npm install react-icons,

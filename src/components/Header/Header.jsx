@@ -1,15 +1,23 @@
 import s from "./Header.module.css";
 import Logo from "../../assets/logo.png";
-// import { NavLink } from "react-router-dom";
-import { locales } from "../../locales"; // Імпортуйте тексти
+import { locales } from "../../locales";
 import { useState } from "react";
+import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
+import MobMenu from "../MobMenu/MobMenu";
 
 const Header = () => {
-  const [language, setLanguage] = useState("ua"); // Стан для мови
+  const [language, setLanguage] = useState("ua");
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  // Функція для перемикання мови
   const toggleLanguage = () => {
     setLanguage((prevLang) => (prevLang === "ua" ? "en" : "ua"));
+  };
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+  const closeMenu = () => {
+    setMenuOpen(false);
   };
 
   return (
@@ -33,25 +41,26 @@ const Header = () => {
                 {locales[language].contakts}
               </a>
             </div>
-            {/* <div className={s.list}>
-              <NavLink className={s.item} href="#home">
-                {locales[language].home}
-              </NavLink>
-            </div>
-            <div className={s.list}>
-              <NavLink className={s.item} href="#about">
-                {locales[language].about}
-              </NavLink>
-            </div> */}
-            {/* <div className={s.list}>
-              <NavLink className={s.item}>{locales[language].contakts}</NavLink>
-            </div> */}
           </nav>
         </div>
         <button className={s.btn} onClick={toggleLanguage}>
           {language === "ua" ? "EN" : "UA"}
         </button>
+        <div className={s.burger} onClick={toggleMenu}>
+          {menuOpen ? (
+            <AiOutlineClose size={30} />
+          ) : (
+            <AiOutlineMenu size={30} />
+          )}
+        </div>
       </header>
+      {menuOpen && (
+        <MobMenu
+          language={language}
+          toggleLanguage={toggleLanguage}
+          closeMenu={closeMenu}
+        />
+      )}
     </div>
   );
 };
