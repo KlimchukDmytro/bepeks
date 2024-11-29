@@ -43,15 +43,17 @@ const Header = () => {
             </div>
           </nav>
         </div>
-        <button className={s.btn} onClick={toggleLanguage}>
-          {language === "ua" ? "EN" : "UA"}
-        </button>
-        <div className={s.burger} onClick={toggleMenu}>
-          {menuOpen ? (
-            <AiOutlineClose size={30} />
-          ) : (
-            <AiOutlineMenu size={30} />
-          )}
+        <div className={s.btn_burger}>
+          <button className={s.btn} onClick={toggleLanguage}>
+            {language === "ua" ? "EN" : "UA"}
+          </button>
+          <div className={s.burger} onClick={toggleMenu}>
+            {menuOpen ? (
+              <AiOutlineClose size={30} />
+            ) : (
+              <AiOutlineMenu size={30} />
+            )}
+          </div>
         </div>
       </header>
       {menuOpen && (

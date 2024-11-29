@@ -1,7 +1,7 @@
 import s from "./About.module.css";
 const Abaut = () => {
   return (
-    <div>
+    <div className={s.qwer}>
       <p className={s.p}>About</p>
     </div>
   );
