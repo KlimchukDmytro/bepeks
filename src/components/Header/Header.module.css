@@ -84,6 +84,13 @@
     font-weight: 500;
     font-size: 16px;
   }
+
+  .btn_burger {
+    padding-right: 50px;
+  }
+  .burger {
+    display: none;
+  }
 }
 
 @media only screen and (min-width: 1280px) {

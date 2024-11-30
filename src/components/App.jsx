@@ -4,7 +4,9 @@ import Header from "./Header/Header";
 import React from "react";
 
 const Home = React.lazy(() => import("../components/Home/Home"));
-const Abaut = React.lazy(() => import("../components/About/About"));
+const OurServices = React.lazy(() =>
+  import("../components/OurServices/OurServices")
+);
 const App = () => {
   return (
     <div>
@@ -12,10 +14,10 @@ const App = () => {
       <div id="home">
         <Home />
       </div>
-      <div id="about">
-        <Abaut />
+      <div id="ourServices">
+        <OurServices />
       </div>
-      <div id="contakts">
+      <div id="contaсts">
         <Contakts />
       </div>
     </div>

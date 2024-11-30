@@ -20,8 +20,8 @@ const MobMenu = ({ language, toggleLanguage, closeMenu }) => {
           <a className={s.item} href="#home" onClick={closeMenu}>
             {language === "ua" ? "Головна" : "Home"}
           </a>
-          <a className={s.item} href="#about" onClick={closeMenu}>
-            {language === "ua" ? "Про нас" : "About"}
+          <a className={s.item} href="#ourServices" onClick={closeMenu}>
+            {language === "ua" ? "Наші послуги" : "Our services"}
           </a>
           <a className={s.item} href="#contacts" onClick={closeMenu}>
             {language === "ua" ? "Контакти" : "Contacts"}

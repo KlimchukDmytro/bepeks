@@ -1,7 +1,7 @@
 import s from "./Header.module.css";
 import Logo from "../../assets/logo.png";
 import { locales } from "../../locales";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import MobMenu from "../MobMenu/MobMenu";
 
@@ -20,6 +20,14 @@ const Header = () => {
     setMenuOpen(false);
   };
 
+  useEffect(() => {
+    if (menuOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+    return () => (document.body.style.overflow = "auto");
+  }, [menuOpen]);
   return (
     <div className={s.container}>
       <header className={s.header}>
@@ -32,13 +40,13 @@ const Header = () => {
               </a>
             </div>
             <div className={s.list}>
-              <a className={s.item} href="#about">
-                {locales[language].about}
+              <a className={s.item} href="#ourServices">
+                {locales[language].ourServices}
               </a>
             </div>
             <div className={s.list}>
-              <a className={s.item} href="#contakts">
-                {locales[language].contakts}
+              <a className={s.item} href="#contacts">
+                {locales[language].contacts}
               </a>
             </div>
           </nav>
