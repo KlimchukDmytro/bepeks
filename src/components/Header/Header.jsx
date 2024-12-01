@@ -38,6 +38,9 @@ const Header = ({ language, setLanguage }) => {
           <a className={s.item} href="#ourServices">
             {locales[language].ourServices}
           </a>
+          <a className={s.item} href="#ourAdvantages">
+            {locales[language].ourAdvantages}
+          </a>
           <a className={s.item} href="#contacts">
             {locales[language].contacts}
           </a>

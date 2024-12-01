@@ -1,16 +1,81 @@
 export const locales = {
   ua: {
     home: "ГОЛОВНА",
-    ourServices: "НАШІ ПОСЛУГИ",
+    ourServices: "ПОСЛУГИ",
+    ourAdvantages: "ПЕРЕВАГИ",
     contacts: "КОНТАКТИ",
+    contactText:
+      "Зв'яжіться з нами, щоб розпочати ваш шлях до міжнародного успіху:",
+    phone: "Телефон",
+    email: "E-mail",
+    advantages: [
+      "Індивідуальний підхід Ми розробляємо рішення, які відповідають вашим потребам.",
+      "Досвід та експертиза Багаторічний досвід роботи у сфері міжнародної торгівлі.",
+      "Результативність Ваш успіх на міжнародних ринках – наша головна мета.",
+    ],
     textHome:
       "Ваш партнер у виході на міжнародні ринки Ми допомагаємо малому та середньому бізнесу успішно освоювати зовнішні ринки, надаючи професійні рішення для ефективного розвитку вашого бізнесу.",
+    services: [
+      { title: "Маркетингові дослідження та експортна стратегія" },
+      { title: "Розробка індивідуальних планів виходу на ринок" },
+      {
+        title: "Комплексний аналіз цільового ринку:",
+        subItems: [
+          "• структура, попит, основні гравці;",
+          "• ціноутворення, вподобання споживачів;",
+          "• канали просування та тренди.",
+        ],
+      },
+      { title: "Пошук партнерів за кордоном" },
+      { title: "Створення бази даних партнерів" },
+      { title: "Попередні контакти та встановлення прямих зв’язків" },
+      { title: "Підготовка до міжнародних виставок" },
+      { title: "Організація участі, переговорів, супровід." },
+      { title: "Максимізація результатів вашої присутності на заходах." },
+      { title: "Консультації у сфері ЗЕД" },
+      {
+        title:
+          "Професійна допомога на кожному етапі зовнішньоекономічної діяльності.",
+      },
+    ],
   },
   en: {
     home: "HOME",
-    ourServices: "OUR SERVICES",
+    ourServices: "SERVICES",
+    ourAdvantages: "ADVANTAGES",
     contacts: "CONTACTS",
+    contactText: "Contact us to start your journey to international success:",
+    phone: "Phone",
+    email: "E-mail",
+    advantages: [
+      "Individual approach We develop solutions that meet your needs.",
+      "Experience and expertise Years of experience in international trade.",
+      "Effectiveness Your success in international markets is our primary goal.",
+    ],
     textHome:
       "Your partner in entering international markets. We help small and medium-sized businesses successfully explore foreign markets, providing professional solutions for the effective growth of your business.",
+    services: [
+      { title: "Marketing research and export strategy" },
+      { title: "Development of individualized market entry plans" },
+      {
+        title: "Comprehensive analysis of the target market:",
+        subItems: [
+          "• structure, demand, key players;",
+          "• pricing, consumer preferences;",
+          "• promotion channels and trends.",
+        ],
+      },
+      { title: "Search for partners abroad" },
+      { title: "Creation of a partner database" },
+      { title: "Preliminary contacts and establishing direct connections" },
+      { title: "Preparation for international exhibitions" },
+      { title: "Event participation, negotiations, support." },
+      { title: "Maximizing the results of your presence at events." },
+      { title: "Consultations in foreign economic activity" },
+      {
+        title:
+          "Professional assistance at every stage of foreign economic activity.",
+      },
+    ],
   },
 };

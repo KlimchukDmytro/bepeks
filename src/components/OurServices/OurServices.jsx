@@ -1,34 +1,29 @@
 import s from "./OurServices.module.css";
-const OurServices = () => {
+import { locales } from "../../locales";
+
+const OurServices = ({ language }) => {
   return (
-    <container>
-      <div>
-        <h2>Наші послуги</h2>
-        <ul>
-          <li>Маркетингові дослідження та експортна стратегія</li>
-          <li>Розробка індивідуальних планів виходу на ринок</li>
-          <li>
-            Комплексний аналіз цільового ринку:
-            <ul>
-              <li>• структура, попит, основні гравці;</li>
-              <li>• ціноутворення, вподобання споживачів;</li>
-              <li>• канали просування та тренди.</li>
-            </ul>
-          </li>
-          <li>Пошук партнерів за кордоном</li>
-          <li>Створення бази даних партнерів</li>
-          <li>Попередні контакти та встановлення прямих зв’язків</li>
-          <li>Підготовка до міжнародних виставок</li>
-          <li>Організація участі, переговорів, супровід.</li>
-          <li>Максимізація результатів вашої присутності на заходах.</li>
-          <li> Консультації у сфері ЗЕД</li>
-          <li>
-            Професійна допомога на кожному етапі зовнішньоекономічної
-            діяльності.
-          </li>
+    <section className={s.container}>
+      <div className={s.containerDiv}>
+        <h2 className={s.title}>{locales[language].ourServices}</h2>
+        <ul className={s.list}>
+          {locales[language].services.map((service, index) => (
+            <li key={index} className={s.item}>
+              {service.title}
+              {service.subItems && (
+                <ul className={s.itemList}>
+                  {service.subItems.map((subItem, subIndex) => (
+                    <li key={subIndex} className={s.itemItem}>
+                      {subItem}
+                    </li>
+                  ))}
+                </ul>
+              )}
+            </li>
+          ))}
         </ul>
       </div>
-    </container>
+    </section>
   );
 };
 

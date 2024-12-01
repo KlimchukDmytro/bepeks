@@ -7,7 +7,7 @@ const Home = ({ language }) => {
       <div className={s.imageWrapper}>
         <div className={s.textOverlay}>
           <h1 className={s.h1}>LLC BEPEKS</h1>
-          <p>{locales[language].textHome}</p>{" "}
+          <p>{locales[language].textHome}</p>
         </div>
       </div>
     </div>
