@@ -10,6 +10,7 @@ p {
 
 body {
   margin: 0;
+  background-color: #f7fbf9;
 }
 
 p:last-child {

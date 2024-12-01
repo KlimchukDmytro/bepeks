@@ -5,8 +5,7 @@ import { useEffect, useState } from "react";
 import { AiOutlineMenu, AiOutlineClose } from "react-icons/ai";
 import MobMenu from "../MobMenu/MobMenu";
 
-const Header = () => {
-  const [language, setLanguage] = useState("ua");
+const Header = ({ language, setLanguage }) => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleLanguage = () => {
@@ -16,41 +15,33 @@ const Header = () => {
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
   };
+
   const closeMenu = () => {
     setMenuOpen(false);
   };
 
   useEffect(() => {
-    if (menuOpen) {
-      document.body.style.overflow = "hidden";
-    } else {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+    return () => {
       document.body.style.overflow = "auto";
-    }
-    return () => (document.body.style.overflow = "auto");
+    };
   }, [menuOpen]);
+
   return (
     <div className={s.container}>
       <header className={s.header}>
         <img className={s.img} src={Logo} alt="logo" />
-        <div>
-          <nav className={s.nav}>
-            <div className={s.list}>
-              <a className={s.item} href="#home">
-                {locales[language].home}
-              </a>
-            </div>
-            <div className={s.list}>
-              <a className={s.item} href="#ourServices">
-                {locales[language].ourServices}
-              </a>
-            </div>
-            <div className={s.list}>
-              <a className={s.item} href="#contacts">
-                {locales[language].contacts}
-              </a>
-            </div>
-          </nav>
-        </div>
+        <nav className={s.nav}>
+          <a className={s.item} href="#home">
+            {locales[language].home}
+          </a>
+          <a className={s.item} href="#ourServices">
+            {locales[language].ourServices}
+          </a>
+          <a className={s.item} href="#contacts">
+            {locales[language].contacts}
+          </a>
+        </nav>
         <div className={s.btn_burger}>
           <button className={s.btn} onClick={toggleLanguage}>
             {language === "ua" ? "EN" : "UA"}
