@@ -12,6 +12,7 @@ const OurServices = ({ language }) => {
           <ul className={s.list}>
             {locales[language].services.map((service, index) => (
               <li key={index} className={s.item}>
+                <div className={s.square}></div>
                 {service.title}
                 {service.subItems && (
                   <ul className={s.itemList}>

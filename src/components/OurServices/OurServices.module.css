@@ -1,23 +1,21 @@
 .container {
-  margin-top: 50px;
-  margin-left: 15px;
-  margin-right: 15px;
-  background-image: linear-gradient(
+  margin: 50px 15px 50px 15px;
+  /* background-image: linear-gradient(
       rgba(35, 36, 52, 0.7),
       rgba(35, 36, 52, 0.7)
     ),
-    url(../../assets/bepeks_services.jpg);
+    url(../../assets/bepeks_services.jpg); */
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  max-height: 500px;
+  height: 100%;
   border-radius: 15px;
 }
 .containerDiv {
   padding: 15px 0;
   font-size: 1rem;
   border-radius: 15px;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 .title {
   text-align: center;
@@ -28,11 +26,32 @@
 }
 
 .list {
-  color: white;
-
+  color: rgb(0, 0, 0);
   padding: 15px;
   width: 90%;
   font-size: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.item {
+  max-width: calc(50% - 10px);
+  flex: 1 1 calc(50% - 10px);
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  background-color: #252746;
+  height: 30px;
+  width: 30px;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 
 @media screen and (min-width: 450px) {

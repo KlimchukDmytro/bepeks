@@ -26,7 +26,10 @@ export const locales = {
           "• канали просування та тренди.",
         ],
       },
-      { title: "Пошук партнерів за кордоном" },
+      {
+        title:
+          "Пошук надійних ділових партнерів за кордоном для взаємовигідної співпраці ",
+      },
       { title: "Створення бази даних партнерів" },
       { title: "Попередні контакти та встановлення прямих зв’язків" },
       { title: "Підготовка до міжнародних виставок" },
@@ -65,7 +68,10 @@ export const locales = {
           "• promotion channels and trends.",
         ],
       },
-      { title: "Search for partners abroad" },
+      {
+        title:
+          "Search for reliable business partners abroad for mutually beneficial cooperation",
+      },
       { title: "Creation of a partner database" },
       { title: "Preliminary contacts and establishing direct connections" },
       { title: "Preparation for international exhibitions" },
