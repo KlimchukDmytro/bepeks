@@ -8,7 +8,6 @@ const OurServices = ({ language }) => {
       <div className={s.containerDiv}>
         <h2 className={s.title}>{locales[language].ourServices}</h2>
         <div className={s.containerFlex}>
-          <img className={s.img} src={bepeks_services} alt="bepeks_services" />
           <ul className={s.list}>
             {locales[language].services.map((service, index) => (
               <li key={index} className={s.item}>

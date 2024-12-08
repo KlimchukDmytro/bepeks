@@ -118,7 +118,15 @@
     gap: 50px;
   }
   .item {
+    font-weight: 700;
+    font-size: 22px;
+  }
+
+  .btn {
+    margin-right: 40px;
     font-weight: 500;
     font-size: 18px;
+    border-radius: 8px;
+    padding: 9px 15px;
   }
 }
