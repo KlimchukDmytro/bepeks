@@ -10,7 +10,15 @@ p {
 
 body {
   margin: 0;
-  background-color: #000000;
+  /* background-color: #000000; */
+  background-image: linear-gradient(
+      rgba(35, 36, 52, 0.7),
+      rgba(35, 36, 52, 0.7)
+    ),
+    url(../assets/bepeks_home.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 p:last-child {
