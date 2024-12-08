@@ -19,26 +19,20 @@ export const locales = {
       { title: "Маркетингові дослідження та експортна стратегія" },
       { title: "Розробка індивідуальних планів виходу на ринок" },
       {
-        title: "Комплексний аналіз цільового ринку:",
-        subItems: [
-          "• структура, попит, основні гравці;",
-          "• ціноутворення, вподобання споживачів;",
-          "• канали просування та тренди.",
-        ],
+        title: "Комплексний аналіз цільового ринку",
       },
       {
         title:
           "Пошук надійних ділових партнерів за кордоном для взаємовигідної співпраці ",
       },
-      { title: "Створення бази даних партнерів" },
+      { title: "Професійна допомога на кожному етапі міжнародної діяльності." },
       { title: "Попередні контакти та встановлення прямих зв’язків" },
       { title: "Підготовка до міжнародних виставок" },
       { title: "Організація участі, переговорів, супровід." },
       { title: "Максимізація результатів вашої присутності на заходах." },
       { title: "Консультації у сфері ЗЕД" },
       {
-        title:
-          "Професійна допомога на кожному етапі зовнішньоекономічної діяльності.",
+        title: "Створення бази даних партнерів",
       },
     ],
   },
@@ -61,26 +55,23 @@ export const locales = {
       { title: "Marketing research and export strategy" },
       { title: "Development of individualized market entry plans" },
       {
-        title: "Comprehensive analysis of the target market:",
-        subItems: [
-          "• structure, demand, key players;",
-          "• pricing, consumer preferences;",
-          "• promotion channels and trends.",
-        ],
+        title: "Comprehensive analysis of the target market",
       },
       {
         title:
           "Search for reliable business partners abroad for mutually beneficial cooperation",
       },
-      { title: "Creation of a partner database" },
+      {
+        title:
+          "Professional assistance at every stage of international activity.",
+      },
       { title: "Preliminary contacts and establishing direct connections" },
       { title: "Preparation for international exhibitions" },
       { title: "Event participation, negotiations, support." },
       { title: "Maximizing the results of your presence at events." },
       { title: "Consultations in foreign economic activity" },
       {
-        title:
-          "Professional assistance at every stage of foreign economic activity.",
+        title: "Creation of a partner database",
       },
     ],
   },
