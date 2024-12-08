@@ -10,21 +10,23 @@ const Contacts = ({ language }) => {
     <section className={s.container}>
       <div className={s.containerDiv}>
         <img className={s.jpg} src={officeImage} alt="Office" />
-        <h2 className={s.title}>{localization.contacts}</h2>
-        <p>{localization.contactText}</p>
-        <address>
-          <ul className={s.list}>
-            <li className={s.item}>
-              {localization.phone}:
-              <a href="tel:+380673526577"> +380 (67) 352 65 77</a>
-            </li>
-            <li className={s.item}>
-              {localization.email}:
-              <a href="mailto:info@bepeks.com"> info@bepeks.com</a>
-            </li>
-          </ul>
-          <img className={s.jpg} src={officeImg} alt="Office2" />
-        </address>
+        <div>
+          <h2 className={s.title}>{localization.contacts}</h2>
+          <p>{localization.contactText}</p>
+          <address>
+            <ul className={s.list}>
+              <li className={s.item}>
+                {localization.phone}:
+                <a href="tel:+380673526577"> +380 (67) 352 65 77</a>
+              </li>
+              <li className={s.item}>
+                {localization.email}:
+                <a href="mailto:info@bepeks.com"> info@bepeks.com</a>
+              </li>
+            </ul>
+          </address>
+        </div>
+        <img className={s.jpg} src={officeImg} alt="Office2" />
       </div>
     </section>
   );

@@ -32,6 +32,48 @@
 @media screen and (min-width: 450px) {
   .container {
     height: 100%;
+  }
+  .containerDiv {
+    padding: 15px 0 0 20px;
     font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+
+  .containerDiv {
+    padding: 15px 0 0 35px;
+    font-size: 2.5rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin-left: 45px;
+    margin-right: 45px;
+    background-image: none;
+    background-size: none;
+    background-position: none;
+    background-repeat: none;
+  }
+
+  .containerDiv {
+    padding: 15px 0;
+    font-size: 1.5rem;
+  }
+  .jpg {
+    display: flex;
+    width: 200px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .containerDiv {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
   }
 }
