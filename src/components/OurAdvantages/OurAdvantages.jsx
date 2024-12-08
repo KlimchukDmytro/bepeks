@@ -5,8 +5,8 @@ const OurAdvantages = ({ language }) => {
 
   return (
     <section className={s.container}>
+      <h2 className={s.title}>{localization.ourAdvantages}</h2>
       <div className={s.containerDiv}>
-        <h2 className={s.title}>{localization.ourAdvantages}</h2>
         <ul className={s.list}>
           {localization.advantages.map((advantage, index) => (
             <li key={index} className={s.item}>

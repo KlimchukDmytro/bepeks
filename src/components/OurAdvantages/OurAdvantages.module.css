@@ -1,5 +1,6 @@
 .container {
-  margin: 50px 15px 50px 15px;
+  margin: 50px 15px 120px 15px;
+  height: 100%;
 }
 .containerDiv {
   margin: 15px;
@@ -7,12 +8,50 @@
   border-radius: 15px;
   background-color: rgba(35, 36, 52, 0.7);
   color: white;
+  padding: 15px 0;
+  border-radius: 15px;
 }
 .title {
   margin-bottom: 10px;
   text-align: center;
+  color: white;
+  font-size: 1.3rem;
 }
 
 .list {
   padding: 10px;
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 450px) {
+  .containerDiv {
+    padding: 15px 0 0 20px;
+  }
+  .title {
+    font-size: 1.6rem;
+  }
+  .list {
+    font-size: 1.1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    margin-left: 35px;
+    margin-right: 35px;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .list {
+    font-size: 1.6rem;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .container {
+    margin-left: 45px;
+    margin-right: 45px;
+  }
+  .title {
+    font-size: 2.8rem;
+  }
 }
