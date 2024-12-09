@@ -1,19 +1,19 @@
 .container {
-  margin: 20px 15px 0 15px;
+  margin: 20px 15px;
   font-size: 1rem;
 }
 .containerDiv {
   padding: 15px 10px;
   font-size: 1rem;
   border-radius: 15px;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(35, 36, 52, 0.9),
       rgba(35, 36, 52, 0.9)
     ),
     url(../../assets/Office.jpg);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
   color: white;
 }
 
