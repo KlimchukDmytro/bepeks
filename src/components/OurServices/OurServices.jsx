@@ -1,6 +1,5 @@
 import s from "./OurServices.module.css";
 import { locales } from "../../locales";
-import bepeks_services from "../../assets/bepeks_services.jpg";
 
 const OurServices = ({ language }) => {
   return (
