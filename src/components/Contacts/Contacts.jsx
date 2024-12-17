@@ -17,7 +17,7 @@ const Contacts = ({ language }) => {
             <ul className={s.list}>
               <li className={s.item}>
                 {localization.phone}:
-                <a href="tel:+380673526577"> +380 (67) 352 65 77</a>
+                <a href="tel:+380999598339">+380 (99) 959 83 39</a>
               </li>
               <li className={s.item}>
                 {localization.email}:
